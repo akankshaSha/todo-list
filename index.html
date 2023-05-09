@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>TODO</title>
+</head>
+<body>
+    <header><h1>Date</h1><p>Day</p></header>
+    <main>
+        <button id = 'addTaskButton'>+</button>
+        <ul id = 'taskList'>
+            
+        </ul>
+    </main>
+    <footer>
+        <p>Made By Akanksha</p>
+        <ul class="socials">
+            <li><a href = 'https://github.com/akankshaSha/' target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href = 'https://www.linkedin.com/feed/' target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href = 'https://twitter.com/Akanksh90693959' target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+    <div class="modalBackdrop hidden"></div>
+    <div class="modal hidden">
+        <form>
+            <label for="task-title"><i class="fa-solid fa-flag"></i></label>
+            <input type="text" name="task title" id="task-title" placeholder="Task Title e.g. Walk The Dog">
+            <label for="task-description"><i class="fa-solid fa-note-sticky"></i></label>
+            <textarea name="task description" id="task-description" cols="30" rows="5" placeholder="(optional) Description e.g. leash is in the cupboard"></textarea>
+            <label for="location"><i class="fa-solid fa-location-dot"></i></label>
+            <input type="text" name = 'location' id = 'location' placeholder="(optional) location e.g. the dog park">
+        </form>
+        <button id="submit-task" disabled>Add Task</button>
+        <button class = 'cancel-button'><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="load-prev-modal hidden">
+        <p>Load Previous Unifinished Tasks?</p>
+        <div class="actions">
+            <button id = 'load-prev-task-button'>YES</button>
+            <button id = 'discard-prev-tasks'>NO</button>
+        </div>
+    </div>
+</body>
+</html>
