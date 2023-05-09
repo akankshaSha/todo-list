@@ -2,7 +2,7 @@
 
 [try here](https://akankshasha.github.io/todo-list/)
 
-![project demo](https://imgur.com/a/uLBATgH)
+![img](https://i.imgur.com/oFh7hR7.gif)
 
 ## Selient Features
 
